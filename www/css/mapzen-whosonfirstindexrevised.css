@@ -46,11 +46,12 @@
 }
 
 #map-explanation-revised {
-    position: inherit;
+    position: absolute;
     z-index: 2000;
-    width: inherit;
-    bottom: inherit;
+    width: 40%;
+    bottom: 0%;
     background-color: rgba(15, 15, 15, 0.75);
+    line-height: 1;
 }
 
 .map-explanation-caption {
@@ -88,8 +89,8 @@
 
 .map-explanation-subcaption-revised {
     background-color: rgba(15, 15, 15, 0.75);
-    margin: 0px 10% 0px 10%;
-    padding: .5% 2% 1%;
+    margin: 0%;
+    padding: 1% 2% 3%;
 }
 
 .subcaption-code {
@@ -99,4 +100,14 @@
     word-break: break-all;
     padding: 0;
     margin: 0;
+}
+
+.subcaption-code-revised {
+    background-color: transparent;
+    font-size: 10px;
+    color: #ffffff;
+    word-break: break-all;
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
 }
