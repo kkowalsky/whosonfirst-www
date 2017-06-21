@@ -16,6 +16,11 @@ mapzen:
 
 placetypes:
 	curl -s -o www/images/placetypes-latest.png https://raw.githubusercontent.com/whosonfirst/whosonfirst-placetypes/master/images/placetypes-latest.png
+	curl -s https://github.com/whosonfirst/whosonfirst-placetypes/blob/master/README.md | pup 'article.markdown-body' > www/placetypes/content.html
+	sed -i -e 's/\/whosonfirst\/whosonfirst-placetypes\/raw\/master\/images/\/images/' www/placetypes/content.html
+	cat www/header.html www/placetypes/content.html www/footer.html > www/placetypes/index.html
+	rm www/placetypes/content.html-e
+	rm www/placetypes/content.html
 
 setup:
 	ubuntu/setup-nginx.sh
