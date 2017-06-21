@@ -87,11 +87,11 @@ h5 {
 
 .tellmemore:before {
 	    content: "[ ";
-}	     
+}
 
 .tellmemore:after {
 	    content: " ]";
-}	     
+}
 
 .col-md-8 {
 }
@@ -100,6 +100,18 @@ h5 {
 		 margin-left: 3em !important;
 		 margin-right: 3em !important;
 		 width: auto !important;
+}
+
+article.markdown-body a.anchor {
+    visibility: hidden;
+    float: left;
+    margin-left: -20px;
+    padding-right: 4px;
+    line-height: 1;
+}
+
+article.markdown-body *:hover a.anchor {
+    visibility: visible;
 }
 
 @media (max-width: 1000px) {
