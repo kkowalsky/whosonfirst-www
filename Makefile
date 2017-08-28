@@ -948,5 +948,4 @@ interns:
 	rm www/interns/temp-content2.html
 	rm www/interns/temp-content1.html-e
     
-  make whole-website:
-    interns getstarted data docs tools state blog whosonfirst-javascript whosonfirst-css whosonfirst-favicons
+whole-website: interns getstarted data docs tools state blog whosonfirst-javascript whosonfirst-css whosonfirst-favicons

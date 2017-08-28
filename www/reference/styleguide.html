@@ -16,27 +16,36 @@
 		<link rel="stylesheet" href="../css/mapzen.whosonfirst.css">
         <!-- CSS for code styling from highlightpack.js -->
 		<link rel="stylesheet" href="../css/styles/grayscale.css">
+        <link rel="stylesheet" href="../css/mapzen.whosonfirst.styleguide.css">
     </head>
 	<body>
 		<div class="container">
-			<h1>Style Guide</h1>
+			<h1>Who's On First Style Guide</h1>
+			<h3>Elements</h2>
+			<ol class="whosonfirst-content-list">
+				<li class="whosonfirst-content-list-item"><a href="#step-1-create-a-map" class="whosonfirst-content-list-item-link">Card Grids</a></li>
+				<li class="whosonfirst-content-list-item"><a href="#step-2-find-info-with-spelunker" class="whosonfirst-content-list-item-link">Stats Cards</a></li>
+				<li class="whosonfirst-content-list-item"><a href="#step-3-retrieve-data-using-the-api" class="whosonfirst-content-list-item-link">Retrieve Data using the API</a></li>
+				<li class="whosonfirst-content-list-item"><a href="#step-4-display-the-data" class="whosonfirst-content-list-item-link">Display the data</a></li>
+          </ol>
 			<h2>Card Grids</h2>
-			<h3>1x3 Grid (1x1 Cards)</h3>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
-					</a> 
+			<div class="whosonfirst-styleguide-entry">
+				<h3>1x3 Grid (1x1 Cards)</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
+						</a> 
+					</div>
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
+						</a> 
+					</div>
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
+						</a>
+					</div>
 				</div>
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
-					</a> 
-				</div>
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
-					</a>
-				</div>
-			</div>
-			<pre><code>&lt;div class="row">
+				<pre><code>&lt;div class="row">
   &lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
     &lt;a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
     &lt;/a> 
@@ -50,26 +59,29 @@
     &lt;/a>
   &lt;/div>
 &lt;/div></code></pre>
-			<h3>2x3 Grid (1x1 and 2x1 Cards)</h3>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col" href="">
-					<div class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card">
-					</div> 
-				</div>
-				<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col whosonfirst-doubleheight-double-col">
-					<div class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow">
-					</div>
-					<div class="whosonfirst-thirds-card whosonfirst-dark-gradient  whosonfirst-card-shadow whosonfirst-other-card-in-col">
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col whosonfirst-doubleheight-double-col">
-					<div class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow">
-					</div>
-					<div class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-other-card-in-col">
-					</div>
-				</div>
 			</div>
-			<pre><code>&lt;div class="row">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>2x3 Grid (1x1 and 2x1 Cards)</h3>
+				<div class="whosonfirst-styleguide-entry">
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col" href="">
+						<div class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card">
+						</div> 
+					</div>
+					<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col whosonfirst-doubleheight-double-col">
+						<div class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow">
+						</div>
+						<div class="whosonfirst-thirds-card whosonfirst-dark-gradient  whosonfirst-card-shadow whosonfirst-other-card-in-col">
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col whosonfirst-doubleheight-double-col">
+						<div class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow">
+						</div>
+						<div class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-other-card-in-col">
+						</div>
+					</div>
+				</div>
+				<pre><code>&lt;div class="row">
   &lt;div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col">
     &lt;a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
     &lt;/a> 
@@ -87,18 +99,20 @@
     &lt;/a>
   &lt;/div>
 &lt;/div></code></pre>
-			<h3>1x3 Grid (1x2 and 1x1 Cards)</h3>
-			<div class="row">
-				<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
-					<a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="">
-					</a> 
-				</div>
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
-					</a> 
-				</div>
 			</div>
-			<pre><code>&lt;div class="row">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>1x3 Grid (1x2 and 1x1 Cards)</h3>
+				<div class="row">
+					<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
+						<a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="">
+						</a> 
+					</div>
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
+						</a> 
+					</div>
+				</div>
+				<pre><code>&lt;div class="row">
   &lt;div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
     &lt;a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="">
     &lt;/a> 
@@ -108,24 +122,26 @@
     &lt;/a> 
   &lt;/div>
 &lt;/div></code></pre>
-			<h3>3x3 Grid (2x1, 1x2, and 1x1 Cards)</h3>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-tripleheight-col whosonfirst-doubleheight-double-col">
-					<a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
-					</a>
-					<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-other-card-in-col" href="">
-					</a>
-				</div>
-				<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-tripleheight-col whosonfirst-doubleheight-triple-col">
-					<a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
-					</a>
-					<a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card whosonfirst-other-card-in-col" href="">
-					</a>
-					<a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card whosonfirst-other-card-in-col" href="">
-					</a>
-				</div>
 			</div>
-			<pre><code>&lt;div class="row">
+				<div class="whosonfirst-styleguide-entry">
+				<h3>3x3 Grid (2x1, 1x2, and 1x1 Cards)</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-tripleheight-col whosonfirst-doubleheight-double-col">
+						<a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
+						</a>
+						<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-other-card-in-col" href="">
+						</a>
+					</div>
+					<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-tripleheight-col whosonfirst-doubleheight-triple-col">
+						<a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
+						</a>
+						<a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card whosonfirst-other-card-in-col" href="">
+						</a>
+						<a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card whosonfirst-other-card-in-col" href="">
+						</a>
+					</div>
+				</div>
+				<pre><code>&lt;div class="row">
   &lt;div class="col-md-4 col-xs-12 whosonfirst-tripleheight-col whosonfirst-doubleheight-double-col">
     &lt;a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
     &lt;/a>
@@ -141,19 +157,22 @@
     &lt;/a>
   &lt;/div>
 &lt;/div></code></pre>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col whosonfirst-doubleheight-double-col">
-					<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
-					</a>
-					<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-other-card-in-col" href="">
-					</a>
-				</div>
-				<div class="col-md-4 col-xs-12 whosonfirst-doublewidth-doubleheight-col">
-					<a class="whosonfirst-doublewidth-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="">
-					</a>
-				</div>
 			</div>
-			<pre><code>&lt;div class="row">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>2x3 Grid (1x1 and 2x2 Cards)</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col whosonfirst-doubleheight-double-col">
+						<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
+						</a>
+						<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-other-card-in-col" href="">
+						</a>
+					</div>
+					<div class="col-md-4 col-xs-12 whosonfirst-doublewidth-doubleheight-col">
+						<a class="whosonfirst-doublewidth-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="">
+						</a>
+					</div>
+				</div>
+				<pre><code>&lt;div class="row">
   &lt;div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col whosonfirst-doubleheight-double-col">
     &lt;a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
     &lt;/a>
@@ -165,39 +184,43 @@
     &lt;/a>
   &lt;/div>
 &lt;/div></code></pre>
-			<h3>1x3 Grid (1x1.5 Cards)</h3>
-			<div class="row">
-				<div class="col-md-6 col-xs-12 whosonfirst-half-col">
-					<a class="whosonfirst-half-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
-					</a>
-				</div>
-				<div class="col-md-6 col-xs-12 whosonfirst-half-col">
-					<a class="whosonfirst-half-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
-					</a>
-				</div>
 			</div>
-			<pre><code>&lt;div class="row">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>1x3 Grid (1x1.5 Cards)</h3>
+				<div class="row">
+					<div class="col-md-6 col-xs-12 whosonfirst-half-col">
+						<a class="whosonfirst-half-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
+						</a>
+					</div>
+					<div class="col-md-6 col-xs-12 whosonfirst-half-col">
+						<a class="whosonfirst-half-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
+						</a>
+					</div>
+				</div>
+				<pre><code>&lt;div class="row">
   &lt;div class="col-md-6 col-xs-12 whosonfirst-half-col">
-    &lt;a class="whosonfirst-half-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
-    &lt;/a>
+	&lt;a class="whosonfirst-half-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
+	&lt;/a>
   &lt;/div>
   &lt;div class="col-md-6 col-xs-12 whosonfirst-half-col">
-    &lt;a class="whosonfirst-half-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
-    &lt;/a>
+	&lt;a class="whosonfirst-half-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
+	&lt;/a>
   &lt;/div>
 &lt;/div></code></pre>
-			<h3>1x3 Grid (1x1 and 1x2 Cards)</h3>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
-					</a>
-				</div>
-				<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
-					<a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
-					</a> 
-				</div>
 			</div>
-			<pre><code>&lt;div class="row">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>1x3 Grid (1x1 and 1x2 Cards)</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
+						</a>
+					</div>
+					<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
+						<a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow  whosonfirst-double-card" href="">
+						</a> 
+					</div>
+				</div>
+				<pre><code>&lt;div class="row">
   &lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
     &lt;a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="">
     &lt;/a>
@@ -207,18 +230,21 @@
     &lt;/a> 
   &lt;/div>
 &lt;/div></code></pre>
-			<h2>Stats Cards</h2>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
-					<a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
-						<div class="whosonfirst-statscard-content-thirds">
-							<h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">21M</h1>
-							<div class="whosonfirst-light-card-subheader">venues in WOF</div>
-						</div>
-					</a>
-				</div>
 			</div>
-			<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
+			<h2>Stats Cards</h2>
+			<div class="whosonfirst-styleguide-entry">
+				<h3>Normal Stat and Normal Subheader Stat Card</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
+						<a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
+							<div class="whosonfirst-statscard-content-thirds">
+								<h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">21M</h1>
+								<div class="whosonfirst-light-card-subheader">venues in WOF</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
   &lt;a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
     &lt;div class="whosonfirst-statscard-content-thirds">
       &lt;h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">21M&lt;/h1>
@@ -226,17 +252,20 @@
     &lt;/div>
   &lt;/a>
 &lt;/div></code></pre>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
-						<div class="whosonfirst-statscard-content-thirds">
-							<h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">2341</h1>
-							<div class="whosonfirst-light-card-subheader-smaller">unique species of canola oils</div>
-						</div>
-					</a> 
-				</div>
 			</div>
-			<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>Normal Stat and Small Subheader Stat Card</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
+							<div class="whosonfirst-statscard-content-thirds">
+								<h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">2341</h1>
+								<div class="whosonfirst-light-card-subheader-smaller">unique species of canola oils</div>
+							</div>
+						</a> 
+					</div>
+				</div>
+				<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
   &lt;a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
     &lt;div class="whosonfirst-statscard-content-thirds">
       &lt;h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">2341&lt;/h1>
@@ -244,17 +273,20 @@
     &lt;/div>
   &lt;/a> 
 &lt;/div></code></pre>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
-						<div class="whosonfirst-statscard-content-thirds-twolines">
-							<h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">45</h1>
-							<div class="whosonfirst-light-card-subheader-smaller-smaller">venues that specialize in unique, valuable expensive, and rare canola oils</div>
-						</div>
-					</a>
-				</div>
 			</div>
-			<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>Normal Stat and Small Small Subheader Stat Card</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
+							<div class="whosonfirst-statscard-content-thirds-twolines">
+								<h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">45</h1>
+								<div class="whosonfirst-light-card-subheader-smaller-smaller">venues that specialize in unique, valuable expensive, and rare canola oils</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
   &lt;a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
     &lt;div class="whosonfirst-statscard-content-thirds-twolines">
       &lt;h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">45&lt;/h1>
@@ -262,17 +294,20 @@
     &lt;/div>
   &lt;/a>
 &lt;/div></code></pre>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
-					<a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
-						<div class="whosonfirst-statscard-content-thirds-smaller">
-							<h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">1234313</h1>
-							<div class="whosonfirst-light-card-subheader">pieces of WOF</div>
-						</div>
-					</a> 
-				</div>
 			</div>
-			<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>Small Stat and Normal Subheader Stat Card</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
+						<a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
+							<div class="whosonfirst-statscard-content-thirds-smaller">
+								<h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">1234313</h1>
+								<div class="whosonfirst-light-card-subheader">pieces of WOF</div>
+							</div>
+						</a> 
+					</div>
+				</div>
+				<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col" href="">
   &lt;a class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow" href="">
     &lt;div class="whosonfirst-statscard-content-thirds-smaller">
       &lt;h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">1234313&lt;/h1>
@@ -280,17 +315,20 @@
     &lt;/div>
   &lt;/a> 
 &lt;/div></code></pre>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<div class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow">
-						<div class="whosonfirst-statscard-content-thirds-smaller-twolines">
-							<h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">34313</h1>
-							<div class="whosonfirst-light-card-subheader-smaller">rivers in the Riveria valley of life</div>
-						</div>
-					</div> 
-				</div>
 			</div>
-			<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>Small Stat and Small Subheader Stat Card</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<div class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow">
+							<div class="whosonfirst-statscard-content-thirds-smaller-twolines">
+								<h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">34313</h1>
+								<div class="whosonfirst-light-card-subheader-smaller">rivers in the Riveria valley of life</div>
+							</div>
+						</div> 
+					</div>
+				</div>
+				<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
   &lt;div class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow">
     &lt;div class="whosonfirst-statscard-content-thirds-smaller-twolines">
       &lt;h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">34313&lt;/h1>
@@ -298,17 +336,20 @@
     &lt;/div>
   &lt;/div> 
 &lt;/div></code></pre>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<div class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow">
-						<div class="whosonfirst-statscard-content-thirds-smaller-threelines">
-							<h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">3431323</h1>
-							<div class="whosonfirst-light-card-subheader-smaller-smaller">species incompassing all possibilities without overlooking anything</div>
+			</div>
+			<div class="whosonfirst-styleguide-entry">
+				<h3>Small Stat and Small Small Subheader Stat Card</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+						<div class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow">
+							<div class="whosonfirst-statscard-content-thirds-smaller-threelines">
+								<h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">3431323</h1>
+								<div class="whosonfirst-light-card-subheader-smaller-smaller">species incompassing all possibilities without overlooking anything</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+				<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
   &lt;div class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow">
     &lt;div class="whosonfirst-statscard-content-thirds-smaller-threelines">
       &lt;h1 class="whosonfirst-light-card-headers-smaller whosonfirst-home-h1">3431323&lt;/h1>
@@ -316,35 +357,20 @@
     &lt;/div>
   &lt;/div>
 &lt;/div></code></pre>
-			<div class="row">
-				<div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-					<div class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow">
-						<div class="whosonfirst-statscard-content-thirds">
-							<h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">234</h1>
-							<div class="whosonfirst-light-card-subheader">venues in Baker</div>
-						</div>
+			</div>
+			<div class="whosonfirst-styleguide-entry">
+				<h3>2x1 Stat Card</h3>
+				<div class="row">
+					<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
+						<div class="whosonfirst-doublewidth-card whosonfirst-light-gradient whosonfirst-card-shadow  whosonfirst-double-card">
+							<div class="whosonfirst-statscard-content-thirds-bigger">
+								<h1 class="whosonfirst-light-card-headers-bigger whosonfirst-home-h1">10237</h1>
+								<div class="whosonfirst-light-card-subheader-bigger">countys in Siberia</div>
+							</div>
+						</div> 
 					</div>
 				</div>
-			</div>
-			<pre><code>&lt;div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-  &lt;div class="whosonfirst-thirds-card whosonfirst-light-gradient whosonfirst-card-shadow">
-    &lt;div class="whosonfirst-statscard-content-thirds">
-      &lt;h1 class="whosonfirst-light-card-headers whosonfirst-home-h1">234&lt;/h1>
-      &lt;div class="whosonfirst-light-card-subheader">venues in Baker&lt;/div>
-    &lt;/div>
-  &lt;/div>
-&lt;/div></code></pre>
-			<div class="row">
-				<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
-					<div class="whosonfirst-doublewidth-card whosonfirst-light-gradient whosonfirst-card-shadow  whosonfirst-double-card">
-						<div class="whosonfirst-statscard-content-thirds-bigger">
-							<h1 class="whosonfirst-light-card-headers-bigger whosonfirst-home-h1">10237</h1>
-							<div class="whosonfirst-light-card-subheader-bigger">countys in Siberia</div>
-						</div>
-					</div> 
-				</div>
-			</div>
-			<pre><code>&lt;div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
+				<pre><code>&lt;div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
   &lt;div class="whosonfirst-doublewidth-card whosonfirst-light-gradient whosonfirst-card-shadow  whosonfirst-double-card">
     &lt;div class="whosonfirst-statscard-content-thirds-bigger">
       &lt;h1 class="whosonfirst-light-card-headers-bigger whosonfirst-home-h1">10237&lt;/h1>
@@ -352,82 +378,91 @@
     &lt;/div>
   &lt;/div> 
 &lt;/div></code></pre>
+			</div>
             <h2>First Level Cards</h2>
-            <h3>1x1 Card</h3>
-            <div class="row">
-              <div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
-                  <a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="blog/">
-                      <div class="whosonfirst-card-content-thirds">
-                          <h1 class="whosonfirst-card-headers whosonfirst-home-h1">BLOG</h1>
-                          <div class="whosonfirst-card-highlight-blog-test"></div>
-                          <div class="whosonfirst-card-subheader-test">Read twenty-or-so thousand words (and counting) of thinking about the project, as it evolves.</div>
-                      </div>
-                  </a> 
-              </div>
-            </div>
-            <pre><code>&lt;a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="blog/">
+			<div class="whosonfirst-styleguide-entry">
+				<h3>1x1 Card</h3>
+				<div class="row">
+				  <div class="col-md-4 col-xs-12 whosonfirst-thirds-col">
+					  <a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="blog/">
+						  <div class="whosonfirst-card-content-thirds">
+							  <h1 class="whosonfirst-card-headers whosonfirst-home-h1">BLOG</h1>
+							  <div class="whosonfirst-card-highlight-blog-test"></div>
+							  <div class="whosonfirst-card-subheader-test">Read twenty-or-so thousand words (and counting) of thinking about the project, as it evolves.</div>
+						  </div>
+					  </a> 
+				  </div>
+				</div>
+				<pre><code>&lt;a class="whosonfirst-thirds-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="blog/">
     &lt;div class="whosonfirst-card-content-thirds">
       &lt;h1 class="whosonfirst-card-headers whosonfirst-home-h1">BLOG&lt;/h1>
       &lt;div class="whosonfirst-card-highlight-blog-test">&lt;/div>
       &lt;div class="whosonfirst-card-subheader-test">Read twenty-or-so thousand words (and counting) of thinking about the project, as it evolves.&lt;/div>
     &lt;/div>
   &lt;/a></code></pre>
-            <h3>1x2 Card</h3>
-            <div class="row">
-                <div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col">
-                    <a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="docs/">
-                        <div class="whosonfirst-card-content-doubleheight">
-                            <h1 class="whosonfirst-card-headers whosonfirst-home-h1">DOCS</h1>
-                            <div class="whosonfirst-card-highlight-docs-test"></div>
-                            <div class="whosonfirst-card-subheader-test">What things mean, what things are called, where things are, where things come from, what we think about time, and what we think about relationships, and more in Who’s On First (WOF). </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <pre><code>&lt;a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="docs/">
+			</div>
+			<div class="whosonfirst-styleguide-entry">
+				<h3>1x2 Card</h3>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 whosonfirst-doubleheight-col">
+						<a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="docs/">
+							<div class="whosonfirst-card-content-doubleheight">
+								<h1 class="whosonfirst-card-headers whosonfirst-home-h1">DOCS</h1>
+								<div class="whosonfirst-card-highlight-docs-test"></div>
+								<div class="whosonfirst-card-subheader-test">What things mean, what things are called, where things are, where things come from, what we think about time, and what we think about relationships, and more in Who’s On First (WOF). </div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<pre><code>&lt;a class="whosonfirst-doubleheight-card whosonfirst-dark-gradient whosonfirst-card-shadow whosonfirst-double-card" href="docs/">
   &lt;div class="whosonfirst-card-content-doubleheight">
     &lt;h1 class="whosonfirst-card-headers whosonfirst-home-h1">DOCS&lt;/h1>
     &lt;div class="whosonfirst-card-highlight-docs-test">&lt;/div>
     &lt;div class="whosonfirst-card-subheader-test">What things mean, what things are called, where things are, where things come from, what we think about time, and what we think about relationships, and more in Who’s On First (WOF). &lt;/div>
   &lt;/div>
 &lt;/a></code></pre>
-            <h3>2x1 Card</h3>
-            <div class="row">
-                <div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
-					<a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="tools/">
-						<div class="whosonfirst-card-content-doublewidth">
-							<h1 class="whosonfirst-card-headers whosonfirst-home-h1">TOOLS</h1>
-							<div class="whosonfirst-card-highlight-tools-test"></div>
-							<div class="whosonfirst-card-subheader-test">Browse the data with our public “spelunker”, investigate specific points on the big planet- ball we all live on with a “get lat long” style application, and more.</div>
-						</div>
-					</a> 
+			</div>
+			<div class="whosonfirst-styleguide-entry">
+				<h3>2x1 Card</h3>
+				<div class="row">
+					<div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
+						<a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="tools/">
+							<div class="whosonfirst-card-content-doublewidth">
+								<h1 class="whosonfirst-card-headers whosonfirst-home-h1">TOOLS</h1>
+								<div class="whosonfirst-card-highlight-tools-test"></div>
+								<div class="whosonfirst-card-subheader-test">Browse the data with our public “spelunker”, investigate specific points on the big planet- ball we all live on with a “get lat long” style application, and more.</div>
+							</div>
+						</a> 
+					</div>
 				</div>
-            </div>
-            <pre><code>&lt;a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="tools/">
+				<pre><code>&lt;a class="whosonfirst-doublewidth-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="tools/">
   &lt;div class="whosonfirst-card-content-doublewidth">
     &lt;h1 class="whosonfirst-card-headers whosonfirst-home-h1">TOOLS&lt;/h1>
     &lt;div class="whosonfirst-card-highlight-tools-test">&lt;/div>
     &lt;div class="whosonfirst-card-subheader-test">Browse the data with our public “spelunker”, investigate specific points on the big planet- ball we all live on with a “get lat long” style application, and more.&lt;/div>
   &lt;/div>
 &lt;/a></code></pre>
-          <h2>Special Query and Response Card</h2>
-          <div class="row">
-              <div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
-                  <div class="whosonfirst-doublewidth-card whosonfirst-light-gradient whosonfirst-card-shadow">
-                      <div class="whosonfirst-card-map-content">
-                          <div class="whosonfirst-card-map-explantation">try it out, retrieve <div id="whosonfirst-custom-card-map-explanation-content">neighbourhoods in seoul</div> by running the following <a class="whosonfirst-content-link" href="https://mapzen.com/documentation/wof/">api</a> method</div>
-                          <div class="whosonfirst-card-map-code">
-                              <div id="whosonfirst-card-map-code-content" class="whosonfirst-card-map-code-content">
-                                  $	curl -X GET 'https://whosonfirst-api.mapzen.com/?method=whosonfirst.places.getDescendants&api_key=[your-mapzen-key]&id=<span id="whosFirstDescendantKey"></span>&per_page=500'
-                              </div>
-                              <div id="whosonfirst-card-map-code-content-response" class="whosonfirst-card-map-code-content whosonfirst-card-map-code-content-response">
-                              </div>
-                          </div>
-                      </div>
-                    </div> 
-                </div>
-            </div>
-            <pre><code>&lt;div class="whosonfirst-doublewidth-card whosonfirst-light-gradient whosonfirst-card-shadow">
+			</div>
+          <h2>Special Cards</h2>
+			<h3>Query and Response Card</h3>
+		<div class="whosonfirst-styleguide-entry">
+			<div class="row">
+			  <div class="col-md-8 col-xs-12 whosonfirst-doublewidth-col">
+				  <div class="whosonfirst-doublewidth-card whosonfirst-light-gradient whosonfirst-card-shadow">
+					  <div class="whosonfirst-card-map-content">
+						  <div class="whosonfirst-card-map-explantation">try it out, retrieve <div id="whosonfirst-custom-card-map-explanation-content">neighbourhoods in seoul</div> by running the following <a class="whosonfirst-content-link" href="https://mapzen.com/documentation/wof/">api</a> method</div>
+						  <div class="whosonfirst-card-map-code">
+							  <div id="whosonfirst-card-map-code-content" class="whosonfirst-card-map-code-content">
+								  $	curl -X GET 'https://whosonfirst-api.mapzen.com/?method=whosonfirst.places.getDescendants&api_key=[your-mapzen-key]&id=<span id="whosFirstDescendantKey"></span>&per_page=500'
+							  </div>
+							  <div id="whosonfirst-card-map-code-content-response" class="whosonfirst-card-map-code-content whosonfirst-card-map-code-content-response">
+							  </div>
+						  </div>
+					  </div>
+					</div> 
+				</div>
+			</div>
+			<pre><code>&lt;div class="whosonfirst-doublewidth-card whosonfirst-light-gradient whosonfirst-card-shadow">
   &lt;div class="whosonfirst-card-map-content">
     &lt;div class="whosonfirst-card-map-explantation">try it out, retrieve &lt;div id="whosonfirst-custom-card-map-explanation-content">neighbourhoods in seoul&lt;/div> by running the following &lt;a class="whosonfirst-content-link" href="https://mapzen.com/documentation/wof/">api&lt;/a> method&lt;/div>
     &lt;div class="whosonfirst-card-map-code">
@@ -439,49 +474,73 @@
     &lt;/div>
   &lt;/div>
 &lt;/div></code></pre>
+			</div>
           <h2>Headers</h2>
           <p>Why is h5 and h6 bigger than h4?</p>
           <p>h5 and h6 are bigger than h4 so that content from GitHub is treated with properly. Ideally, h6 would be h2, but that is not possible because we are pulling from GitHub.</p>
+			<div class="whosonfirst-styleguide-entry">
           <h3>H1</h3>
-          <h1>Header 1</h1>
+          <h1 class="whosonfirst-styleguide-display-header">Header 1</h1>
           <pre><code>&lt;h1>Header 1&lt;/h1></code></pre>
+			</div>
+			<div class="whosonfirst-styleguide-entry">
           <h3>H2</h3>
-          <h2>Header 2</h2>
+          <h2 class="whosonfirst-styleguide-display-header">Header 2</h2>
           <pre><code>&lt;h2>Header 2&lt;/h2></code></pre>
+				</div>
+					<div class="whosonfirst-styleguide-entry">
           <h3>H3</h3>
-          <h3>Header 3</h3>
+          <h3 class="whosonfirst-styleguide-display-header">Header 3</h3>
           <pre><code>&lt;h3>Header 3&lt;/h3></code></pre>
+						</div>
+						<div class="whosonfirst-styleguide-entry">
           <h3>H4</h3>
-          <h4>Header 4</h4>
+          <h4 class="whosonfirst-styleguide-display-header">Header 4</h4>
           <pre><code>&lt;h4>Header 4&lt;/h4></code></pre>
+							</div>
+							<div class="whosonfirst-styleguide-entry">
           <h3>H5</h3>
-          <h5>Header 5</h5>
+          <h5 class="whosonfirst-styleguide-display-header">Header 5</h5>
           <pre><code>&lt;h5>Header 5&lt;/h5></code></pre>
+								</div>
+								<div class="whosonfirst-styleguide-entry">
           <h3>H6</h3>
-          <h6>Header 6</h6>
+          <h6 class="whosonfirst-styleguide-display-header">Header 6</h6>
           <pre><code>&lt;h6>Header 6&lt;/h6></code></pre>
-          <h3>Special Header Treatments</h3>
-          <h4>Card Headers H1</h4>
+									</div>
+          <h2>Special Header Treatments</h2>
+          <div class="whosonfirst-styleguide-entry">
+			<h3>Card Headers H1</h3>
           <h1 class="whosonfirst-card-headers whosonfirst-home-h1" style="background-color: #1F1F1F">TOOLS</h1>
           <pre><code>&lt;h1 class="whosonfirst-card-headers whosonfirst-home-h1">TOOLS&lt;/h1></code></pre>
-          <h4>Subpage Headers H1</h4>
+			  </div>
+          <div class="whosonfirst-styleguide-entry">
+			  <h3>Subpage Headers H1</h3>
           <p>This styling is automatically added in the Makefile.</p>
-          <h1 class="whosonfirst-subpage-header" id="data">Data</h1>
+          <h1 class="whosonfirst-subpage-header whosonfirst-styleguide-display-header" id="data">Data</h1>
           <pre><code>&lt;h1 class="whosonfirst-subpage-header" id="data">Data&lt;/h1></code></pre>
-          <h4>Deempahsized Subpage Header</h4>
-          <h6 id="2015" class="whosonfirst-deemphasized-subpageheader">
+			  </div>
+          <div class="whosonfirst-styleguide-entry">
+			  <h3>Deempahsized Subpage Header</h3>
+          <h6 id="2015" class="whosonfirst-deemphasized-subpageheader whosonfirst-styleguide-display-header">
               2015
           </h6>
           <pre><code>&lt;h6 id="2015" class="whosonfirst-deemphasized-subpageheader">
   2015
 &lt;/h6></code></pre>
-          <h4>Sole Links</h4>
+			  </div>
+          <div class="whosonfirst-styleguide-entry">
+			  <h3>Sole Links</h3>
           <a href="https://mapzen.com/blog/spelunker-jumping-into-who-s-on-first" class="whosonfirst-sole-link whosonfirst-dynamically-generated-post" data-pubdate="2015-09-28" title="Spelunker - Jumping into Who&#39;s On First" data-word-count="3813" data-au="0.70" style="margin: 0 0 12px; border-bottom: .9px solid #1F1F1F;">Spelunker - Jumping into Who&#39;s On First</a>
           <pre><code>&lt;a href="https://mapzen.com/blog/spelunker-jumping-into-who-s-on-first" class="whosonfirst-sole-link whosonfirst-dynamically-generated-post" data-pubdate="2015-09-28" title="Spelunker - Jumping into Who&#39;s On First" data-word-count="3813" data-au="0.70">Spelunker - Jumping into Who&#39;s On First&lt;/a></code></pre>
+			  </div>
           <h2>Text</h2>
+			  <div class="whosonfirst-styleguide-entry">
           <p>The naming conventions for repositories at their most granular is as follows:</p>
           <pre><code>&lt;p>The naming conventions for repositories at their most granular is as follows:&lt;/p></code></pre>
+			  </div>
           <h2>Navbar</h2>
+		<div class="whosonfirst-styleguide-entry">
           <h3>Navbar List Items</h3>
           <li class="whosonfirst-navbar-element-collapsed" style="list-style-type: none">
               <a href="../../allthedata/" class="whosonfirst-nav-link whosonfirst-nav-link-collapsed">data</a>
@@ -489,10 +548,14 @@
           <pre><code>&lt;li class="whosonfirst-navbar-element-collapsed">
   &lt;a href="../../allthedata/" class="whosonfirst-nav-link whosonfirst-nav-link-collapsed">data&lt;/a>
 &lt;/li></code></pre>
+		</div>
           <h2>Code Blocks</h2>
+		<div class="whosonfirst-styleguide-entry">
           <h3>Inline Blocks</h3>
           <code>make docs</code>
           <pre><code>&lt;code>make docs&lt;/code></code></pre>
+		</div>
+		<div class="whosonfirst-styleguide-entry">
           <h3>Block Blocks</h3>
           <pre><code>$&gt; cd /usr/local/mapzen/whosonfirst-data
 $&gt; git lfs ls-files
@@ -500,7 +563,9 @@ $&gt; git lfs ls-files
           <pre><code>&lt;pre>&lt;code>$&gt; cd /usr/local/mapzen/whosonfirst-data
 $&gt; git lfs ls-files
 65ccc4825e * data/856/333/45/85633345.geojson&lt;/code>&lt;/pre></code></pre>
+		</div>
           <h2>Footer</h2>
+		<div class="whosonfirst-styleguide-entry">
           <nav class="navbar navbar-default navbar-bottom">
 				<div class="container">
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -529,22 +594,30 @@ $&gt; git lfs ls-files
     &lt;/div>
   &lt;/nav>
 &lt;/footer></code></pre>
+				</div>
             <h2>Links</h2>
+			<div class="whosonfirst-styleguide-entry">
             <h3>Regular Link</h3>
             <p><a href="https://github.com/whosonfirst/whosonfirst-placetypes" style="border-bottom: .9px solid #1F1F1F;">all the places between and inclusive of continents to microhoods</a></p>
             <pre><code>&lt;a href="https://github.com/whosonfirst/whosonfirst-placetypes">all the places between and inclusive of continents to microhoods&lt;/a></code></pre>
+				</div>
+				<div class="whosonfirst-styleguide-entry">
             <h3>Active Link</h3>
             <p><a href="https://github.com/whosonfirst/whosonfirst-placetypes" class="whosonfirst-nav-active" style="border-bottom: .9px solid #1F1F1F;">all the places between and inclusive of continents to microhoods</a></p>
             <pre><code>&lt;a href="https://github.com/whosonfirst/whosonfirst-placetypes" class="whosonfirst-nav-active">all the places between and inclusive of continents to microhoods&lt;/a></code></pre>
+				</div>
             <h2>Blockquote</h2>
+			<div class="whosonfirst-styleguide-entry">
             <blockquote>
                 <p>Although it provides some additional options for identifying common language variations, RFC 5646 includes all of the tags that were previously valid. If you have been using RFC 1766, RFC 3066, or RFC 4646 you do not need to make any changes to your tags.</p>
             </blockquote>
             <pre><code>&lt;blockquote>
   &lt;p>Although it provides some additional options for identifying common language variations, RFC 5646 includes all of the tags that were previously valid. If you have been using RFC 1766, RFC 3066, or RFC 4646 you do not need to make any changes to your tags.&lt;/p>
 &lt;/blockquote></code></pre>
+				</div>
           <h2>Lists</h2>
           <h3>Ordered Lists</h3>
+			<div class="whosonfirst-styleguide-entry">
           <h4>Table of Contents</h4>
           <ol class="whosonfirst-content-list">
             <li class="whosonfirst-content-list-item"><a href="#step-1-create-a-map" class="whosonfirst-content-list-item-link">Create a Map</a></li>
@@ -558,6 +631,8 @@ $&gt; git lfs ls-files
   &lt;li class="whosonfirst-content-list-item">&lt;a href="#step-3-retrieve-data-using-the-api" class="whosonfirst-content-list-item-link">Retrieve Data using the API&lt;/a>&lt;/li>
   &lt;li class="whosonfirst-content-list-item">&lt;a href="#step-4-display-the-data" class="whosonfirst-content-list-item-link">Display the data&lt;/a>&lt;/li>
 &lt;/ol></code></pre>
+				</div>
+				<div class="whosonfirst-styleguide-entry">
           <h3>Unordered Lists</h3>
           <ul>
               <li style="font-family: 'Roboto', Helvetica, Arial, sans-serif;font-size: 17px;font-weight: 300;line-height: 1.3;margin: 0 0 6px;">
@@ -581,6 +656,8 @@ $&gt; git lfs ls-files
     &lt;a href="other.html">Other Data&lt;/a> - all postalcodes, constituencies, intersections, pics, and brands for the entire world
   &lt;/li>
 &lt;/ul></code></pre>
+				</div>
+				<div class="whosonfirst-styleguide-entry">
           <h3>Non Bullet List</h3>
           <ul class="whosonfirst-nonbullet-list whosonfirst-sole-links-container">
             <li class="whosonfirst-nonbullet-list-item">
@@ -598,7 +675,9 @@ $&gt; git lfs ls-files
     &lt;a href="https://mapzen.com/blog/yesnofix" class="whosonfirst-sole-link whosonfirst-dynamically-generated-post" title="Yes No Fix" data-pubdate="2016-04-08" data-word-count="2902" data-au="0.53">Yes No Fix&lt;/a>
   &lt;/li>
 &lt;/ul></code></pre>
+				</div>
           <h2>Side Nav</h2>
+			<div class="whosonfirst-styleguide-entry">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0">
 			<aside>
@@ -653,7 +732,9 @@ $&gt; git lfs ls-files
     &lt;/div>
   &lt;/aside>
 &lt;/div></code></pre>
+				</div>
           <h2>Subpage Content Container w/ Nav For Mobile Screens</h2>
+			<div class="whosonfirst-styleguide-entry">
           <div class="whosonfirst-fulltabs-container">
             <div class="whosonfirst-extrasmall-tabs-menu">
                 <div class="whosonfirst-extrasmall-tabs-menu-content">
@@ -683,7 +764,7 @@ $&gt; git lfs ls-files
             <div class="whosonfirst-tabs-content">
               <p>Who’s On First is a gazetteer or a big list of places, each with a stable identifier and some number of descriptive properties about that location. An interesting way to think about a gazetteer is to consider it as the space where debate about a place is managed but not decided.</p>
               <p>Who’s On First starts from a series of first principles:</p>
-              <h2 id="mapzen-has-an-opinion">Mapzen has an opinion</h2>
+              <h2 id="mapzen-has-an-opinion" class="whosonfirst-style-guide-old-school-h2">Mapzen has an opinion</h2>
               <p>It is important that Mapzen have an opinion not about any one place but rather about the nature of place itself. It is important for us to know and understand the boundaries of our project in order to know what the project is for and, critically, what the project is not.</p>
             </div>
           </div>
@@ -720,7 +801,9 @@ $&gt; git lfs ls-files
     &lt;p>It is important that Mapzen have an opinion not about any one place but rather about the nature of place itself. It is important for us to know and understand the boundaries of our project in order to know what the project is for and, critically, what the project is not.&lt;/p>
   &lt;/div>
 &lt;/div></code></pre>
+				</div>
           <h2>Inline Card List</h2>
+			<div class="whosonfirst-styleguide-entry">
           <div class="row whosonfirst-subpage-container-row">
               <div class="whosonfirst-subpage-container-singlewidth-col">
                   <a class="whosonfirst-subpage-container-singlewidth-col-card whosonfirst-dark-gradient whosonfirst-card-shadow" href="addr/">
@@ -755,6 +838,8 @@ $&gt; git lfs ls-files
     &lt;/a> 
   &lt;/div>
 &lt;/div></code></pre>
+				</div>
+				<div class="whosonfirst-styleguide-entry">
           <h3>Single Inline Card</h3>
           <div class="row whosonfirst-subpage-container-row">
               <div class="whosonfirst-subpage-container-singlewidth-col">
@@ -770,6 +855,8 @@ $&gt; git lfs ls-files
     &lt;/a> 
   &lt;/div>
 &lt;/div></code></pre>
+				</div>
+				<div class="whosonfirst-styleguide-entry">
           <h3>Double Inline Card</h3>
           <div class="row whosonfirst-subpage-container-row">
               <div class="whosonfirst-subpage-container-doublewidth-col">
@@ -785,6 +872,8 @@ $&gt; git lfs ls-files
     &lt;/a> 
   &lt;/div>
 &lt;/div></code></pre>
+				</div>
+				<div class="whosonfirst-styleguide-entry">
           <h3>Triple Inline Card</h3>
           <div class="row whosonfirst-subpage-container-row">
               <div class="whosonfirst-subpage-container-triplewidth-col">
@@ -800,6 +889,8 @@ $&gt; git lfs ls-files
     &lt;/a> 
   &lt;/div>
 &lt;/div></code></pre>
+				</div>
+			</div>
       </div>
     
     <!-- JavaScript for code styling from highlightpack.js -->
